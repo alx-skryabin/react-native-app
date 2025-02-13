@@ -25,7 +25,8 @@ function App(): React.JSX.Element {
       />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <View>
-          <Text style={styles.highlight}>Bambam</Text>
+          <Text style={styles.highlight}>React Native</Text>
+          <Text style={styles.highlight}>Without Expo</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
