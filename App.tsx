@@ -1,5 +1,5 @@
-import React from 'react';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import React from 'react'
+import {Colors} from 'react-native/Libraries/NewAppScreen'
 import {
   SafeAreaView,
   ScrollView,
@@ -7,16 +7,15 @@ import {
   StyleSheet,
   Text,
   useColorScheme,
-  View,
-} from 'react-native';
-
+  View
+} from 'react-native'
 
 function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  const isDarkMode = useColorScheme() === 'dark'
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter
+  }
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -30,15 +29,15 @@ function App(): React.JSX.Element {
         </View>
       </ScrollView>
     </SafeAreaView>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   highlight: {
     fontWeight: '700',
-    textAlign: 'center',
     paddingVertical: 40,
-  },
-});
+    textAlign: 'center'
+  }
+})
 
-export default App;
+export default App
